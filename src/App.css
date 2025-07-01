@@ -1,31 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background: #f9f9f9;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: white;
+  position: sticky;
+  top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.logo span {
+  color: #b8a600;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  background: #cbb80c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.heart {
-  color: #ff0000;
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
 
-.small {
-  font-size: 0.75rem;
+.cta {
+  background: white;
+  color: #00000099;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about, .services, .contact {
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 1.5rem;
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .services .cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
+
+.clients {
+  padding: 3rem 2rem;
+  background-color: #f1f1f1;
+}
+
+.client-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.client-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.client-card h3 {
+  margin-bottom: 0.5rem;
+  color: #e2db0c;
+}
+
+@media (min-width: 768px) {
+  .client-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .client-card {
+    width: 45%;
+  }
 }
