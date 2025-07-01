@@ -20,12 +20,9 @@ function App() {
     <div className="App">
       {/* Navbar */}
       <header className="navbar">
-        <div className="logo-container">
-          <img src="/logo.png" alt="Logo" className="logo-img" />
           <div className="logo-text">
             Flywheel<span>Technologies</span>
           </div>
-        </div>
 
         <nav>
           <a href="#home">Home</a>
