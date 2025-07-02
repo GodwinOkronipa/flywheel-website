@@ -9,6 +9,7 @@ body {
   text-align: center;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,15 +19,23 @@ body {
   color: white;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
-.logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo-text {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: white;
 }
 
-.logo span {
-  color: #b8a600;
+.logo-text span {
+  color: #faef29; /* Flywheel yellow */
 }
 
 nav a {
@@ -36,9 +45,10 @@ nav a {
   font-weight: 500;
 }
 
+/* HERO SECTION */
 .hero {
   padding: 4rem 2rem;
-  background: #cbb80c;
+  background: #f0d030;
   color: white;
 }
 
@@ -54,18 +64,28 @@ nav a {
 
 .cta {
   background: white;
-  color: #00000099;
+  color: #000000cc;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.about, .services, .contact {
+.cta:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* SECTIONS */
+.about,
+.services,
+.contact {
   padding: 3rem 2rem;
   background: white;
 }
 
+/* SERVICES */
 .services .cards {
   display: flex;
   flex-direction: column;
@@ -77,32 +97,10 @@ nav a {
   background: #f1f1f1;
   padding: 1.5rem;
   border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-footer {
-  padding: 1.5rem;
-  background: #222;
-  color: white;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-  .services .cards {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .card {
-    width: 30%;
-  }
-}
-
+/* CLIENTS */
 .clients {
   padding: 3rem 2rem;
   background-color: #f1f1f1;
@@ -120,7 +118,7 @@ footer {
   padding: 1.5rem;
   border-radius: 10px;
   text-align: left;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .client-card h3 {
@@ -128,7 +126,30 @@ footer {
   color: #e2db0c;
 }
 
+/* FOOTER */
+footer {
+  padding: 1.5rem;
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
 @media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .services .cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 30%;
+  }
+
   .client-cards {
     flex-direction: row;
     justify-content: space-around;
@@ -138,3 +159,54 @@ footer {
     width: 45%;
   }
 }
+/* Scroll Animation Setup */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  font-size: 2rem;
+  width: 0;
+  animation: typing 3.5s steps(35, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}.solutions {
+  padding: 3rem 2rem;
+  background-color: #fffdee;
+  text-align: center;
+}
+
+/* Alternative typing style for h2 */
+.typing-text-alt {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #000;
+  font-size: 1.8rem;
+  width: 0;
+  animation: typing-alt 3.5s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing-alt {
+  from { width: 0 }
+  to { width: 100% }
+}
+
