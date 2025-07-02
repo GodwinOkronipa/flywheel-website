@@ -35,7 +35,7 @@ body {
 }
 
 .logo-text span {
-  color: #f7ec1d; /* Flywheel yellow */
+  color: #faef29; /* Flywheel yellow */
 }
 
 nav a {
@@ -48,7 +48,7 @@ nav a {
 /* HERO SECTION */
 .hero {
   padding: 4rem 2rem;
-  background: #edea13;
+  background: #f0d030;
   color: white;
 }
 
