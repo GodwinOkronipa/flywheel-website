@@ -43,9 +43,9 @@ function App() {
 
       {/* About Section */}
       <section id="about" className="about animate">
-        <h2>Who We Are</h2>
+        <h2 className='typing-text'>Who We Are</h2>
         <p>
-          Flywheel Technologies is a student-led AI innovation company building digital solutions for small businesses. We build Apps, Websites, Databases and AI features that take your brand to the next level. Reach out to us today!
+          Flywheel Technologies is a student-led AI innovation company building digital solutions for small businesses. We build Apps, Websites, Data Solutions and AI features, automating the boring stuff so you can focus on what truly matters.
         </p>
       </section>
 
@@ -67,7 +67,13 @@ function App() {
           </div>
         </div>
       </section>
+{/* 360° Digital Solutions Section */}
+      <section className="solutions animate">
+        <h2 className="typing-text-alt">360° Digital Solutions for your Business</h2>
+        <p>We don’t just build — we brand, market, and brainstorm with you.</p>
+      </section>
 
+  
       {/* Clients Section */}
       <section id="clients" className="clients animate">
         <h2>Our Clients</h2>
@@ -87,7 +93,7 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className="contact animate">
-        <h2>Contact Us</h2>
+        <h2 classname="typing-text">Contact Us</h2>
         <p>Want to work with us or learn more?</p>
         <a href="mailto:flywheeltechnologies2025@gmail.com" className="cta">Email Us</a>
       </section>
