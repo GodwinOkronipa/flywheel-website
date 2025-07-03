@@ -67,10 +67,16 @@ function App() {
           </div>
         </div>
       </section>
-{/* 360° Digital Solutions Section */}
+      {/* 360° Digital Solutions Section */}
       <section className="solutions animate">
         <h2 className="typing-text-alt">360° Digital Solutions for your Business</h2>
         <p>We don’t just build — we brand, market, and brainstorm with you.</p>
+      </section>
+
+      {/* Trusted Services Section */}
+      <section className="trusted-services animate">
+        <h2>Services You Can Trust</h2>
+        <p>Build your business without breaking the Bank.</p>
       </section>
 
   

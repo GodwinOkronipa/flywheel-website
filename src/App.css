@@ -48,7 +48,7 @@ nav a {
 /* HERO SECTION */
 .hero {
   padding: 4rem 2rem;
-  background: #f0d030;
+  background: #ebcf30;
   color: white;
 }
 
@@ -210,3 +210,22 @@ footer {
   to { width: 100% }
 }
 
+.trusted-services {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.trusted-services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.trusted-services p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
